@@ -1,0 +1,12 @@
+{
+  "name": "morphix",
+  "version": "0.1.0",
+  "description": "Morphix routes math video prompts into a Hermes agent running in WSL and serves the rendered output back into the website.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check": "node --check server.js && node --check src/runtime.js && node --check src/hermesBridge.js && node --check src/pipeline.js"
+  }
+}
